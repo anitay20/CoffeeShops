@@ -16,4 +16,9 @@ class VenueCell: UITableViewCell {
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
+    func configureTheCell(_ venue: Venue) {
+        self.nameLabel.text = venue.name
+        let address = venue.location.formattedAddress.joined(separator: " ")
+        self.addressLabel.text = address
+    }
 }
