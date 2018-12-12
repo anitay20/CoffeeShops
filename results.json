@@ -1,0 +1,1256 @@
+{
+    "meta": {
+        "code": 200,
+        "requestId": "5c0f34ce351e3d4262c1dd95"
+    },
+    "response": {
+        "suggestedFilters": {
+            "header": "Tap to show:",
+            "filters": [
+                {
+                    "name": "$-$$$$",
+                    "key": "price"
+                },
+                {
+                    "name": "Open now",
+                    "key": "openNow"
+                }
+            ]
+        },
+        "suggestedRadius": 2055,
+        "headerLocation": "SoMa",
+        "headerFullLocation": "SoMa, San Francisco",
+        "headerLocationGranularity": "neighborhood",
+        "query": "coffeeshop",
+        "totalResults": 26,
+        "suggestedBounds": {
+            "ne": {
+                "lat": 37.78954124669655,
+                "lng": -122.39828967366395
+            },
+            "sw": {
+                "lat": 37.74507062621388,
+                "lng": -122.41984691262863
+            }
+        },
+        "groups": [
+            {
+                "type": "Recommended Places",
+                "name": "recommended",
+                "items": [
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "5029476ce4b056f7678d1e02",
+                            "name": "CoffeeShop",
+                            "contact": {},
+                            "location": {
+                                "address": "3139 Mission St",
+                                "crossStreet": "@ Precita",
+                                "lat": 37.74709201805399,
+                                "lng": -122.41886703813023,
+                                "labeledLatLngs": [
+                                    {
+                                        "label": "display",
+                                        "lat": 37.74709201805399,
+                                        "lng": -122.41886703813023
+                                    }
+                                ],
+                                "distance": 3631,
+                                "postalCode": "94110",
+                                "cc": "US",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "3139 Mission St (@ Precita)",
+                                    "San Francisco, CA 94110",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1e0931735",
+                                    "name": "Coffee Shop",
+                                    "pluralName": "Coffee Shops",
+                                    "shortName": "Coffee Shop",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": true,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "venuePage": {
+                                "id": "36941235"
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "flags": {
+                            "outsideRadius": true,
+                            "exactMatch": true
+                        },
+                        "referralId": "e-0-5029476ce4b056f7678d1e02-0"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "4a4b8a43f964a5206fac1fe3",
+                            "name": "Sightglass Coffee",
+                            "contact": {},
+                            "location": {
+                                "address": "270 7th St",
+                                "crossStreet": "btwn Howard & Folsom St",
+                                "lat": 37.77702490373948,
+                                "lng": -122.40852980833175,
+                                "distance": 976,
+                                "postalCode": "94103",
+                                "cc": "US",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "270 7th St (btwn Howard & Folsom St)",
+                                    "San Francisco, CA 94103",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1e0931735",
+                                    "name": "Coffee Shop",
+                                    "pluralName": "Coffee Shops",
+                                    "shortName": "Coffee Shop",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": true,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "venuePage": {
+                                "id": "48020594"
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "referralId": "e-0-4a4b8a43f964a5206fac1fe3-1"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "5150b7c78aca1877ec109926",
+                            "name": "Red Door Coffee",
+                            "contact": {},
+                            "location": {
+                                "address": "111 Minna St",
+                                "crossStreet": "2nd St.",
+                                "lat": 37.78751985485642,
+                                "lng": -122.39926954816234,
+                                "labeledLatLngs": [
+                                    {
+                                        "label": "display",
+                                        "lat": 37.78751985485642,
+                                        "lng": -122.39926954816234
+                                    }
+                                ],
+                                "distance": 1389,
+                                "postalCode": "94105",
+                                "cc": "US",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "111 Minna St (2nd St.)",
+                                    "San Francisco, CA 94105",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1e0931735",
+                                    "name": "Coffee Shop",
+                                    "pluralName": "Coffee Shops",
+                                    "shortName": "Coffee Shop",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": true,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "venuePage": {
+                                "id": "51611372"
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "referralId": "e-0-5150b7c78aca1877ec109926-2"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "4a671dbaf964a520edc81fe3",
+                            "name": "Taylor Street Coffee Shop",
+                            "contact": {},
+                            "location": {
+                                "address": "375 Taylor St",
+                                "crossStreet": "at O'Farrell",
+                                "lat": 37.78568085058454,
+                                "lng": -122.41121571514505,
+                                "labeledLatLngs": [
+                                    {
+                                        "label": "display",
+                                        "lat": 37.78568085058454,
+                                        "lng": -122.41121571514505
+                                    }
+                                ],
+                                "distance": 1673,
+                                "postalCode": "94102",
+                                "cc": "US",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "375 Taylor St (at O'Farrell)",
+                                    "San Francisco, CA 94102",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1e0931735",
+                                    "name": "Coffee Shop",
+                                    "pluralName": "Coffee Shops",
+                                    "shortName": "Coffee Shop",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": true,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "delivery": {
+                                "id": "308022",
+                                "url": "https://www.grubhub.com/restaurant/taylor-street-coffee-shop-375-taylor-st-san-francisco/308022?affiliate=1131&utm_source=foursquare-affiliate-network&utm_medium=affiliate&utm_campaign=1131&utm_content=308022",
+                                "provider": {
+                                    "name": "grubhub",
+                                    "icon": {
+                                        "prefix": "https://fastly.4sqi.net/img/general/cap/",
+                                        "sizes": [
+                                            40,
+                                            50
+                                        ],
+                                        "name": "/delivery_provider_grubhub_20180129.png"
+                                    }
+                                }
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "venuePage": {
+                                "id": "105324728"
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "referralId": "e-0-4a671dbaf964a520edc81fe3-3"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "47fde9f4f964a520df4e1fe3",
+                            "name": "Coffee Bar",
+                            "contact": {},
+                            "location": {
+                                "address": "1890 Bryant St",
+                                "crossStreet": "btwn Mariposa St. & Florida St.",
+                                "lat": 37.76312402977745,
+                                "lng": -122.41099834442139,
+                                "labeledLatLngs": [
+                                    {
+                                        "label": "display",
+                                        "lat": 37.76312402977745,
+                                        "lng": -122.41099834442139
+                                    }
+                                ],
+                                "distance": 1773,
+                                "postalCode": "94110",
+                                "cc": "US",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "1890 Bryant St (btwn Mariposa St. & Florida St.)",
+                                    "San Francisco, CA 94110",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1e0931735",
+                                    "name": "Coffee Shop",
+                                    "pluralName": "Coffee Shops",
+                                    "shortName": "Coffee Shop",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": false,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "referralId": "e-0-47fde9f4f964a520df4e1fe3-4"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "49b1a93df964a520d9521fe3",
+                            "name": "Stable Cafe",
+                            "contact": {},
+                            "location": {
+                                "address": "2128 Folsom St",
+                                "crossStreet": "btwn 17th & 18th St",
+                                "lat": 37.763233,
+                                "lng": -122.415262,
+                                "labeledLatLngs": [
+                                    {
+                                        "label": "display",
+                                        "lat": 37.763233,
+                                        "lng": -122.415262
+                                    }
+                                ],
+                                "distance": 2033,
+                                "postalCode": "94110",
+                                "cc": "US",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "2128 Folsom St (btwn 17th & 18th St)",
+                                    "San Francisco, CA 94110",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d16d941735",
+                                    "name": "Café",
+                                    "pluralName": "Cafés",
+                                    "shortName": "Café",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": false,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "referralId": "e-0-49b1a93df964a520d9521fe3-5"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "4085b980f964a5208bf21ee3",
+                            "name": "Atlas Cafe",
+                            "contact": {},
+                            "location": {
+                                "address": "3049 20th St",
+                                "crossStreet": "at Alabama St",
+                                "lat": 37.75894716640233,
+                                "lng": -122.41147787533407,
+                                "labeledLatLngs": [
+                                    {
+                                        "label": "display",
+                                        "lat": 37.75894716640233,
+                                        "lng": -122.41147787533407
+                                    }
+                                ],
+                                "distance": 2168,
+                                "postalCode": "94110",
+                                "cc": "US",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "3049 20th St (at Alabama St)",
+                                    "San Francisco, CA 94110",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d16d941735",
+                                    "name": "Café",
+                                    "pluralName": "Cafés",
+                                    "shortName": "Café",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": false,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "flags": {
+                            "outsideRadius": true
+                        },
+                        "referralId": "e-0-4085b980f964a5208bf21ee3-6"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "480d1a5ef964a520284f1fe3",
+                            "name": "Four Barrel Coffee",
+                            "contact": {},
+                            "location": {
+                                "address": "375 Valencia St",
+                                "crossStreet": "btwn 14th St & 15th St",
+                                "lat": 37.76702438676065,
+                                "lng": -122.42195860692624,
+                                "distance": 2316,
+                                "postalCode": "94103",
+                                "cc": "US",
+                                "neighborhood": "Mission District",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "375 Valencia St (btwn 14th St & 15th St)",
+                                    "San Francisco, CA 94103",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1e0931735",
+                                    "name": "Coffee Shop",
+                                    "pluralName": "Coffee Shops",
+                                    "shortName": "Coffee Shop",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": true,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "venuePage": {
+                                "id": "52311110"
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "flags": {
+                            "outsideRadius": true
+                        },
+                        "referralId": "e-0-480d1a5ef964a520284f1fe3-7"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "49c55326f964a520f3561fe3",
+                            "name": "Han's Coffee Shop",
+                            "contact": {},
+                            "location": {
+                                "address": "900 Sutter St",
+                                "crossStreet": "Leavenworth St",
+                                "lat": 37.788512,
+                                "lng": -122.415483,
+                                "labeledLatLngs": [
+                                    {
+                                        "label": "display",
+                                        "lat": 37.788512,
+                                        "lng": -122.415483
+                                    }
+                                ],
+                                "distance": 2162,
+                                "postalCode": "94109",
+                                "cc": "US",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "900 Sutter St (Leavenworth St)",
+                                    "San Francisco, CA 94109",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d143941735",
+                                    "name": "Breakfast Spot",
+                                    "pluralName": "Breakfast Spots",
+                                    "shortName": "Breakfast",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/breakfast_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": false,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "flags": {
+                            "outsideRadius": true
+                        },
+                        "referralId": "e-0-49c55326f964a520f3561fe3-8"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "59cc3c40b37e2b6989a28261",
+                            "name": "Laundré",
+                            "contact": {},
+                            "location": {
+                                "address": "2401 Mission St",
+                                "lat": 37.75853764009544,
+                                "lng": -122.41891873190413,
+                                "labeledLatLngs": [
+                                    {
+                                        "label": "display",
+                                        "lat": 37.75853764009544,
+                                        "lng": -122.41891873190413
+                                    }
+                                ],
+                                "distance": 2624,
+                                "postalCode": "94110",
+                                "cc": "US",
+                                "neighborhood": "Mission District",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "2401 Mission St",
+                                    "San Francisco, CA 94110",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1fc941735",
+                                    "name": "Laundry Service",
+                                    "pluralName": "Laundry Services",
+                                    "shortName": "Laundry",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/laundry_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": false,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "flags": {
+                            "outsideRadius": true
+                        },
+                        "referralId": "e-0-59cc3c40b37e2b6989a28261-9"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "50a282fbe4b04e5db4ad9420",
+                            "name": "Stanza Coffee",
+                            "contact": {},
+                            "location": {
+                                "address": "3126 16th St",
+                                "crossStreet": "btwn Albion St & Valencia St",
+                                "lat": 37.76507735984022,
+                                "lng": -122.4226081666815,
+                                "labeledLatLngs": [
+                                    {
+                                        "label": "display",
+                                        "lat": 37.76507735984022,
+                                        "lng": -122.4226081666815
+                                    }
+                                ],
+                                "distance": 2459,
+                                "postalCode": "94103",
+                                "cc": "US",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "3126 16th St (btwn Albion St & Valencia St)",
+                                    "San Francisco, CA 94103",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1e0931735",
+                                    "name": "Coffee Shop",
+                                    "pluralName": "Coffee Shops",
+                                    "shortName": "Coffee Shop",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": false,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "flags": {
+                            "outsideRadius": true
+                        },
+                        "referralId": "e-0-50a282fbe4b04e5db4ad9420-10"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "42853f80f964a5200c231fe3",
+                            "name": "Ritual Coffee Roasters",
+                            "contact": {},
+                            "location": {
+                                "address": "1026 Valencia St",
+                                "crossStreet": "btwn 21st & Hill St",
+                                "lat": 37.756501,
+                                "lng": -122.421146,
+                                "distance": 2922,
+                                "postalCode": "94110",
+                                "cc": "US",
+                                "neighborhood": "Mission District",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "1026 Valencia St (btwn 21st & Hill St)",
+                                    "San Francisco, CA 94110",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1e0931735",
+                                    "name": "Coffee Shop",
+                                    "pluralName": "Coffee Shops",
+                                    "shortName": "Coffee Shop",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": true,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "venuePage": {
+                                "id": "52354546"
+                            },
+                            "hereNow": {
+                                "count": 1,
+                                "summary": "One other person is here",
+                                "groups": [
+                                    {
+                                        "type": "others",
+                                        "name": "Other people here",
+                                        "count": 1,
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        },
+                        "flags": {
+                            "outsideRadius": true
+                        },
+                        "referralId": "e-0-42853f80f964a5200c231fe3-11"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "4ae9f461f964a520f7b721e3",
+                            "name": "Capricorn Coffees Inc.",
+                            "contact": {},
+                            "location": {
+                                "address": "353 10th St",
+                                "crossStreet": "btwn Folsom & Harrison St",
+                                "lat": 37.77215428350988,
+                                "lng": -122.4119398017734,
+                                "labeledLatLngs": [
+                                    {
+                                        "label": "display",
+                                        "lat": 37.77215428350988,
+                                        "lng": -122.4119398017734
+                                    }
+                                ],
+                                "distance": 1295,
+                                "postalCode": "94103",
+                                "cc": "US",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "353 10th St (btwn Folsom & Harrison St)",
+                                    "San Francisco, CA 94103",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1e0931735",
+                                    "name": "Coffee Shop",
+                                    "pluralName": "Coffee Shops",
+                                    "shortName": "Coffee Shop",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": false,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "referralId": "e-0-4ae9f461f964a520f7b721e3-12"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "547cd07d498ef3265ffc5a75",
+                            "name": "The Market",
+                            "contact": {},
+                            "location": {
+                                "address": "1355 Market St Ste 100",
+                                "crossStreet": "at 10th St",
+                                "lat": 37.77656006546319,
+                                "lng": -122.41727455535519,
+                                "labeledLatLngs": [
+                                    {
+                                        "label": "display",
+                                        "lat": 37.77656006546319,
+                                        "lng": -122.41727455535519
+                                    }
+                                ],
+                                "distance": 1729,
+                                "postalCode": "94103",
+                                "cc": "US",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "1355 Market St Ste 100 (at 10th St)",
+                                    "San Francisco, CA 94103",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1f9941735",
+                                    "name": "Food & Drink Shop",
+                                    "pluralName": "Food & Drink Shops",
+                                    "shortName": "Food & Drink",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/foodanddrink_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": true,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "venuePage": {
+                                "id": "134615431"
+                            },
+                            "hereNow": {
+                                "count": 1,
+                                "summary": "One other person is here",
+                                "groups": [
+                                    {
+                                        "type": "others",
+                                        "name": "Other people here",
+                                        "count": 1,
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        },
+                        "referralId": "e-0-547cd07d498ef3265ffc5a75-13"
+                    },
+                    {
+                        "reasons": {
+                            "count": 0,
+                            "items": [
+                                {
+                                    "summary": "This spot is popular",
+                                    "type": "general",
+                                    "reasonName": "globalInteractionReason"
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "52617140498ec4929863ea86",
+                            "name": "Saint Frank",
+                            "contact": {},
+                            "location": {
+                                "address": "2340 Polk St",
+                                "crossStreet": "btwn Union & Green",
+                                "lat": 37.79846064964029,
+                                "lng": -122.42224912630755,
+                                "labeledLatLngs": [
+                                    {
+                                        "label": "display",
+                                        "lat": 37.79846064964029,
+                                        "lng": -122.42224912630755
+                                    }
+                                ],
+                                "distance": 3380,
+                                "postalCode": "94109",
+                                "cc": "US",
+                                "city": "San Francisco",
+                                "state": "CA",
+                                "country": "United States",
+                                "formattedAddress": [
+                                    "2340 Polk St (btwn Union & Green)",
+                                    "San Francisco, CA 94109",
+                                    "United States"
+                                ]
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1e0931735",
+                                    "name": "Coffee Shop",
+                                    "pluralName": "Coffee Shops",
+                                    "shortName": "Coffee Shop",
+                                    "icon": {
+                                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                                        "suffix": ".png"
+                                    },
+                                    "primary": true
+                                }
+                            ],
+                            "verified": false,
+                            "stats": {
+                                "tipCount": 0,
+                                "usersCount": 0,
+                                "checkinsCount": 0,
+                                "visitsCount": 0
+                            },
+                            "beenHere": {
+                                "count": 0,
+                                "lastCheckinExpiredAt": 0,
+                                "marked": false,
+                                "unconfirmedCount": 0
+                            },
+                            "photos": {
+                                "count": 0,
+                                "groups": []
+                            },
+                            "hereNow": {
+                                "count": 0,
+                                "summary": "Nobody here",
+                                "groups": []
+                            }
+                        },
+                        "flags": {
+                            "outsideRadius": true
+                        },
+                        "referralId": "e-0-52617140498ec4929863ea86-14"
+                    }
+                ]
+            }
+        ]
+    }
+}
