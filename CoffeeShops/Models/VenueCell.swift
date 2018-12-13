@@ -17,8 +17,29 @@ class VenueCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     
     func configureTheCell(_ venue: Venue) {
+        self.imgView.image = UIImage(named: "ImagePlaceholder")
+//        do {
+//            let baseUrl = "https://fastly.4sqi.net/img/general/200x200"
+//            guard let bestPhoto = venue.bestPhoto else { return }
+//            let url = baseUrl + bestPhoto.suffix
+//            print("URL is: \(url)")
+//            if let imageURL = URL(string: url) {
+//                let imageData = try Data(contentsOf: imageURL)
+//                self.imgView.image = UIImage(data: imageData)
+//            }
+//        } catch {
+//                print("Error fetching image: \(error)")
+//        }
+        
+        let baseUrl = "https://fastly.4sqi.net/img/general/200x200"
+        guard let bestPhoto = venue.bestPhoto else { return }
+        let url = baseUrl + bestPhoto.suffix
+        print("URL: \(url)")
+        self.imgView.downloadImageFrom(link: url, contentMode: .scaleAspectFit)
+
         self.nameLabel.text = venue.name
-        let address = venue.location.formattedAddress.joined(separator: " ")
-        self.addressLabel.text = address
+        self.addressLabel.text = venue.location.formattedAddress[0]
+        self.ratingLabel.text = venue.rating?.description
+        self.priceLabel.text = venue.price?.currency
     }
 }
