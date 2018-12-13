@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var coffeeShops = [Venue]()
-    var coffeeShopIDs = [String]()
     var coffeeShopDetails = [Venue]()
     
     @IBOutlet weak var venuesTableView: UITableView!
@@ -32,7 +30,7 @@ class ViewController: UIViewController {
         //        let clientID = "P402HAXJU35OKOS2ZZLDC3QZ0JQPOZM3IWWQVF2ZR5FMW5MW"
         //        let clientSecret = "0RD2XLKTPVI11ZTXFH1RKWXOPJQC51IJ0IVCH1YJL4RUDXKF"
         let version = "20180323"
-        let limit = "1"
+        let limit = "3"
         let latLong = "37.7751,-122.3977"
         let query = "coffeeshop"
 
@@ -42,15 +40,9 @@ class ViewController: UIViewController {
     }
     
     func downloadJSON() {
-        
-//        let exploreUrlString = "\(baseUrl)/\(exploreEndpoint)?client_id=\(clientID)&client_secret=\(clientSecret)&v=\(version)&limit=\(limit)&ll=\(latLong)&query=\(query)"
-//        let url = URL(string: exploreUrlString)
         let exploreEndpoint = "venues/explore"
-        let venuesEndpoint = "venues"
         
         let exploreUrlString = constructURL(endpoint: exploreEndpoint)
-        
-//        guard let downloadURL = exploreUrlString else { return }
         
         URLSession.shared.dataTask(with: exploreUrlString) { (data, urlResponse, error) in
             guard let data = data, error == nil, urlResponse != nil else {
@@ -61,28 +53,31 @@ class ViewController: UIViewController {
             do {
                 let venues = try JSONDecoder().decode(VenueAPIResponse.self, from: data)
                 guard let groups = venues.response.groups else { return }
-                self.coffeeShops = groups[0].items.map { $0.venue }
-                self.coffeeShopIDs = self.coffeeShops.map { $0.id }
+                let coffeeShops = groups[0].items.map { $0.venue }
+                let coffeeShopIDs = coffeeShops.map { $0.id }
                 
                 let dispatchGroup = DispatchGroup()
-                for id in self.coffeeShopIDs {
+                for id in coffeeShopIDs {
                     dispatchGroup.enter()
-                    let venuesUrl = self.constructURL(endpoint: venuesEndpoint)
-//                    let venuesUrlString = "\(baseUrl)/\(venuesEndpoint)/\(id)?client_id=\(clientID)&client_secret=\(clientSecret)&v=\(version)&limit=\(limit)&ll=\(latLong)&query=\(query)"
-//                    let url = URL(string: venuesUrlString)
                     
-//                    guard let venuesUrl = url else { return }
+                    let venuesEndpoint = "venues/\(id)"
+                    let venuesUrl = self.constructURL(endpoint: venuesEndpoint)
                     URLSession.shared.dataTask(with: venuesUrl) { (data, urlResponse, error) in
                         guard let data = data, error == nil, urlResponse != nil else {
-                            print("Something went wrong")
+                            print("getting ids didn't work")
                             return
                         }
+                        print("venuesUrl: \(venuesUrl)")
                         print("Finished \(id)")
                         do {
                             let venue = try JSONDecoder().decode(VenueAPIResponse.self, from: data)
                             print(venue)
                             guard let eachVenue = venue.response.venue else { return }
                             self.coffeeShopDetails.append(eachVenue)
+                            
+                            DispatchQueue.main.async {
+                                self.venuesTableView.reloadData()
+                            }
                         } catch let error {
                             print(error)
                         }
@@ -110,12 +105,13 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return coffeeShops.count
+        return coffeeShopDetails.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "VenueCell") as? VenueCell  else { return UITableViewCell() }
-        cell.configureTheCell(coffeeShops[indexPath.row])
+
+        cell.configureTheCell(coffeeShopDetails[indexPath.row])
         return cell
     }
 }

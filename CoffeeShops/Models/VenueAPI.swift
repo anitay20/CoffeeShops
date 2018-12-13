@@ -16,9 +16,11 @@ struct Venue: Decodable {
     let url: String?
     let price: Price?
     let rating: Double?
+    let listed: Listed?
     let bestPhoto: BestPhoto?
 
     struct Location: Decodable {
+        let distance: Int
         let lat: Double
         let lng: Double
         let formattedAddress: [String]
@@ -26,6 +28,18 @@ struct Venue: Decodable {
     
     struct Price: Decodable {
         let currency: String
+    }
+    
+    struct Listed: Decodable {
+        let groups: [ListedGroup]
+        
+        struct ListedGroup: Decodable {
+            let items: [Detail]
+            
+            struct Detail: Decodable {
+                let description: String
+            }
+        }
     }
     
     struct BestPhoto: Decodable {
