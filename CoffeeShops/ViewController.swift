@@ -16,10 +16,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        downloadJSON()
-        print("CoffeeShops: \(String(describing: coffeeShops))")
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        downloadJSON()
+    }
+    
     func downloadJSON() {
         let clientID = "P402HAXJU35OKOS2ZZLDC3QZ0JQPOZM3IWWQVF2ZR5FMW5MW"
         let clientSecret = "0RD2XLKTPVI11ZTXFH1RKWXOPJQC51IJ0IVCH1YJL4RUDXKF"
@@ -42,12 +44,9 @@ class ViewController: UIViewController {
             do {
                 let venues = try JSONDecoder().decode(VenueAPIResponse.self, from: data)
                 self.coffeeShops = venues.response.groups[0].items.map { $0.venue }
-                print(self.coffeeShops)
-//                for venue in venues.response.groups {
-//                    for item in venue.items {
-//                        print("Each Venue is: \(item.venue)\n")
-//                    }
-//                }
+                DispatchQueue.main.async {
+                    self.venuesTableView.reloadData()
+                }
             } catch let error {
                 print(error)
             }
@@ -62,9 +61,9 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return coffeeShops.count
         print(coffeeShops.count)
-        return 15
+        return coffeeShops.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
