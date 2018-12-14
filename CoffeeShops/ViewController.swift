@@ -25,12 +25,20 @@ class ViewController: UIViewController {
     
     func constructURL(endpoint: String) -> URL {
         let baseUrl = "https://api.foursquare.com/v2"
-        let clientID = "UCZJZUK0ANMM54UPMX5HCMOJUNLW5DAPBXJ0LUCGLXYJP5QY"
-        let clientSecret = "3OFWDQERPUCVSFJSZHBCPROGE3JSGU0WC2WLOWXY4M0JMHXX"
-        //        let clientID = "P402HAXJU35OKOS2ZZLDC3QZ0JQPOZM3IWWQVF2ZR5FMW5MW"
-        //        let clientSecret = "0RD2XLKTPVI11ZTXFH1RKWXOPJQC51IJ0IVCH1YJL4RUDXKF"
+        // anitay20@gmail.com
+        let clientID = "P402HAXJU35OKOS2ZZLDC3QZ0JQPOZM3IWWQVF2ZR5FMW5MW"
+        let clientSecret = "0RD2XLKTPVI11ZTXFH1RKWXOPJQC51IJ0IVCH1YJL4RUDXKF"
+
+        // ayeung20@gmail.com
+//        let clientID = "UCZJZUK0ANMM54UPMX5HCMOJUNLW5DAPBXJ0LUCGLXYJP5QY"
+//        let clientSecret = "3OFWDQERPUCVSFJSZHBCPROGE3JSGU0WC2WLOWXY4M0JMHXX"
+        
+        // puppykaiyay@gmail.com
+//        let clientID = "UNH1LOLTTOP42G3PXDE1H33GGXVAMQ5FOH215SF0DBYTI5DG"
+//        let clientSecret = "HCMDTRA1ECGWBW23EYYJZDP2F2VROTSORGYUES15HYNO35RX"
+        
         let version = "20180323"
-        let limit = "3"
+        let limit = "2"
         let latLong = "37.7751,-122.3977"
         let query = "coffeeshop"
 
@@ -96,6 +104,7 @@ class ViewController: UIViewController {
             }
         }.resume()
     }
+    
 }
 
 extension ViewController: UITableViewDataSource {
@@ -114,4 +123,5 @@ extension ViewController: UITableViewDataSource {
         cell.configureTheCell(coffeeShopDetails[indexPath.row])
         return cell
     }
+    
 }

@@ -25,16 +25,24 @@ class VenueCell: UITableViewCell {
         guard let bestPhoto = venue.bestPhoto else { return }
         let url = URL(string: baseUrl + bestPhoto.suffix)
         let placeholder = UIImage(named: "ImagePlaceholder")
-        let processor = RoundCornerImageProcessor(cornerRadius: 20)
-        self.imgView.kf.setImage(with: url, placeholder: placeholder, options: [.processor(processor), .cacheOriginalImage])
+        let processor = DownsamplingImageProcessor(size: CGSize(width: 100, height: 100)) >> RoundCornerImageProcessor(cornerRadius: 20)
+        
+        self.imgView.kf.setImage(with: url, placeholder: placeholder, options: [.processor(processor), .cacheOriginalImage]) {
+            result in
+            switch result {
+            case .success(let value):
+                print("Task done for: \(value.source.url?.absoluteString ?? "")")
+            case .failure(let error):
+                print("Job failed: \(error.localizedDescription)")
+            }
+        }
         
         self.nameLabel.text = venue.name
         self.addressLabel.text = venue.location.formattedAddress[0]
-//        print(venue.listed?.groups[0].items)
         
         let descriptions = venue.listed?.groups[0].items.map { $0.description }
         self.descriptionLabel.text = getDescription(descriptions!)
-//        self.distanceLabel.text = String(venue.location.distance)
+
         self.ratingLabel.text = venue.rating?.description
         self.priceLabel.text = venue.price?.currency
     }
