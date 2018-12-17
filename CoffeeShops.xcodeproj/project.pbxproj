@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0805A1DD21C1158E0040FD1C /* VenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0805A1DC21C1158E0040FD1C /* VenueTests.swift */; };
+		08B8A78721C47750009FC9D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8A78621C4774F009FC9D2 /* ViewController.swift */; };
+		08B8A78921C47E89009FC9D2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8A78821C47E89009FC9D2 /* DetailsViewController.swift */; };
+		08B8A79221C5BA25009FC9D2 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8A79121C5BA25009FC9D2 /* ViewControllerTests.swift */; };
 		08CD04F621C2469500512960 /* venue1.json in Resources */ = {isa = PBXBuildFile; fileRef = 08CD04F521C2469500512960 /* venue1.json */; };
-		08CD04F921C24FF000512960 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CD04F821C24FF000512960 /* ImageView.swift */; };
 		08EC000921C0E3F900DE1C44 /* VenueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EC000821C0E3F900DE1C44 /* VenueAPI.swift */; };
 		08ECFFA321BF8CCE00DE1C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECFFA221BF8CCE00DE1C44 /* AppDelegate.swift */; };
-		08ECFFA521BF8CCE00DE1C44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECFFA421BF8CCE00DE1C44 /* ViewController.swift */; };
 		08ECFFA821BF8CCE00DE1C44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ECFFA621BF8CCE00DE1C44 /* Main.storyboard */; };
 		08ECFFAA21BF8CCF00DE1C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08ECFFA921BF8CCF00DE1C44 /* Assets.xcassets */; };
 		08ECFFAD21BF8CCF00DE1C44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ECFFAB21BF8CCF00DE1C44 /* LaunchScreen.storyboard */; };
-		08ECFFB821BF8CCF00DE1C44 /* CoffeeShopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECFFB721BF8CCF00DE1C44 /* CoffeeShopsTests.swift */; };
 		08ECFFC921BFA18A00DE1C44 /* exploreResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 08ECFFC821BFA18A00DE1C44 /* exploreResults.json */; };
 		08ECFFCB21BFA6BA00DE1C44 /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECFFCA21BFA6BA00DE1C44 /* VenueCell.swift */; };
 		0FFB9552C2AB4ED1617479EE /* Pods_CoffeeShops.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9545536AD138E6120D16A13 /* Pods_CoffeeShops.framework */; };
@@ -34,19 +33,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0805A1DC21C1158E0040FD1C /* VenueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTests.swift; sourceTree = "<group>"; };
+		08B8A78621C4774F009FC9D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = /Users/anita/CoffeeShops/CoffeeShops/Models/ViewController.swift; sourceTree = "<absolute>"; };
+		08B8A78821C47E89009FC9D2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		08B8A79121C5BA25009FC9D2 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		08CD04F521C2469500512960 /* venue1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = venue1.json; sourceTree = "<group>"; };
-		08CD04F821C24FF000512960 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		08EC000821C0E3F900DE1C44 /* VenueAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPI.swift; sourceTree = "<group>"; };
 		08ECFF9F21BF8CCE00DE1C44 /* CoffeeShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08ECFFA221BF8CCE00DE1C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		08ECFFA421BF8CCE00DE1C44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08ECFFA721BF8CCE00DE1C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08ECFFA921BF8CCF00DE1C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08ECFFAC21BF8CCF00DE1C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08ECFFAE21BF8CCF00DE1C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08ECFFB321BF8CCF00DE1C44 /* CoffeeShopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeShopsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		08ECFFB721BF8CCF00DE1C44 /* CoffeeShopsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsTests.swift; sourceTree = "<group>"; };
 		08ECFFB921BF8CCF00DE1C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08ECFFC821BFA18A00DE1C44 /* exploreResults.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exploreResults.json; sourceTree = "<group>"; };
 		08ECFFCA21BFA6BA00DE1C44 /* VenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
@@ -78,14 +76,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08CD04F721C24FD100512960 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				08CD04F821C24FF000512960 /* ImageView.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		08ECFF9621BF8CCE00DE1C44 = {
 			isa = PBXGroup;
 			children = (
@@ -111,10 +101,10 @@
 		08ECFFA121BF8CCE00DE1C44 /* CoffeeShops */ = {
 			isa = PBXGroup;
 			children = (
-				08CD04F721C24FD100512960 /* Extensions */,
 				08ECFFC221BF8D1900DE1C44 /* Models */,
+				08B8A78621C4774F009FC9D2 /* ViewController.swift */,
+				08B8A78821C47E89009FC9D2 /* DetailsViewController.swift */,
 				08ECFFA221BF8CCE00DE1C44 /* AppDelegate.swift */,
-				08ECFFA421BF8CCE00DE1C44 /* ViewController.swift */,
 				08ECFFA621BF8CCE00DE1C44 /* Main.storyboard */,
 				08ECFFA921BF8CCF00DE1C44 /* Assets.xcassets */,
 				08ECFFAB21BF8CCF00DE1C44 /* LaunchScreen.storyboard */,
@@ -126,9 +116,8 @@
 		08ECFFB621BF8CCF00DE1C44 /* CoffeeShopsTests */ = {
 			isa = PBXGroup;
 			children = (
-				08ECFFB721BF8CCF00DE1C44 /* CoffeeShopsTests.swift */,
 				08ECFFB921BF8CCF00DE1C44 /* Info.plist */,
-				0805A1DC21C1158E0040FD1C /* VenueTests.swift */,
+				08B8A79121C5BA25009FC9D2 /* ViewControllerTests.swift */,
 			);
 			path = CoffeeShopsTests;
 			sourceTree = "<group>";
@@ -337,11 +326,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08CD04F921C24FF000512960 /* ImageView.swift in Sources */,
-				08ECFFA521BF8CCE00DE1C44 /* ViewController.swift in Sources */,
 				08EC000921C0E3F900DE1C44 /* VenueAPI.swift in Sources */,
 				08ECFFCB21BFA6BA00DE1C44 /* VenueCell.swift in Sources */,
+				08B8A78721C47750009FC9D2 /* ViewController.swift in Sources */,
 				08ECFFA321BF8CCE00DE1C44 /* AppDelegate.swift in Sources */,
+				08B8A78921C47E89009FC9D2 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,8 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08ECFFB821BF8CCF00DE1C44 /* CoffeeShopsTests.swift in Sources */,
-				0805A1DD21C1158E0040FD1C /* VenueTests.swift in Sources */,
+				08B8A79221C5BA25009FC9D2 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.CoffeeShops;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -534,7 +522,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.CoffeeShops;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
