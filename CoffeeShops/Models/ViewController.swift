@@ -12,44 +12,42 @@ class ViewController: UIViewController {
     
     var coffeeShopDetails = [Venue]()
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var venuesTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleLabel.text = "Welcome! Here are some coffee shops around the Envoy office."
         venuesTableView.rowHeight = 120.0
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        downloadJSON()
+        if coffeeShopDetails.isEmpty {
+            fetchVenues()
+        }
     }
     
     func constructURL(endpoint: String) -> URL {
-        let baseUrl = "https://api.foursquare.com/v2"
         // anitay20@gmail.com
         let clientID = "P402HAXJU35OKOS2ZZLDC3QZ0JQPOZM3IWWQVF2ZR5FMW5MW"
         let clientSecret = "0RD2XLKTPVI11ZTXFH1RKWXOPJQC51IJ0IVCH1YJL4RUDXKF"
-
-        // ayeung20@gmail.com
-//        let clientID = "UCZJZUK0ANMM54UPMX5HCMOJUNLW5DAPBXJ0LUCGLXYJP5QY"
-//        let clientSecret = "3OFWDQERPUCVSFJSZHBCPROGE3JSGU0WC2WLOWXY4M0JMHXX"
         
-        // puppykaiyay@gmail.com
-//        let clientID = "UNH1LOLTTOP42G3PXDE1H33GGXVAMQ5FOH215SF0DBYTI5DG"
-//        let clientSecret = "HCMDTRA1ECGWBW23EYYJZDP2F2VROTSORGYUES15HYNO35RX"
-        
+        let baseUrl = "https://api.foursquare.com/v2"
         let version = "20180323"
-        let limit = "2"
-        let latLong = "37.7751,-122.3977"
+        let limit = "15"
         let query = "coffeeshop"
+        
+        // Envoy's office
+        let latLong = "37.7751,-122.3977"
+
 
         let url = "\(baseUrl)/\(endpoint)?client_id=\(clientID)&client_secret=\(clientSecret)&v=\(version)&limit=\(limit)&ll=\(latLong)&query=\(query)"
         guard let responseUrl = URL(string: url) else { return URL(string: baseUrl)! }
         return responseUrl
     }
     
-    func downloadJSON() {
+    func fetchVenues() {
         let exploreEndpoint = "venues/explore"
-        
         let exploreUrlString = constructURL(endpoint: exploreEndpoint)
         
         URLSession.shared.dataTask(with: exploreUrlString) { (data, urlResponse, error) in
@@ -64,37 +62,7 @@ class ViewController: UIViewController {
                 let coffeeShops = groups[0].items.map { $0.venue }
                 let coffeeShopIDs = coffeeShops.map { $0.id }
                 
-                let dispatchGroup = DispatchGroup()
-                for id in coffeeShopIDs {
-                    dispatchGroup.enter()
-                    
-                    let venuesEndpoint = "venues/\(id)"
-                    let venuesUrl = self.constructURL(endpoint: venuesEndpoint)
-                    URLSession.shared.dataTask(with: venuesUrl) { (data, urlResponse, error) in
-                        guard let data = data, error == nil, urlResponse != nil else {
-                            print("getting ids didn't work")
-                            return
-                        }
-                        print("venuesUrl: \(venuesUrl)")
-                        print("Finished \(id)")
-                        do {
-                            let venue = try JSONDecoder().decode(VenueAPIResponse.self, from: data)
-                            print(venue)
-                            guard let eachVenue = venue.response.venue else { return }
-                            self.coffeeShopDetails.append(eachVenue)
-                            
-                            DispatchQueue.main.async {
-                                self.venuesTableView.reloadData()
-                            }
-                        } catch let error {
-                            print(error)
-                        }
-                        dispatchGroup.leave()
-                    }.resume()
-                }
-                dispatchGroup.notify(queue: .main) {
-                    print("Finished All Requests")
-                }
+                self.fetchVenueDetails(coffeeShopIDs)
                 
                 DispatchQueue.main.async {
                     self.venuesTableView.reloadData()
@@ -104,10 +72,41 @@ class ViewController: UIViewController {
             }
         }.resume()
     }
+ 
+    func fetchVenueDetails(_ ids: [String]) {
+        let dispatchGroup = DispatchGroup()
+        for id in ids {
+            dispatchGroup.enter()
+            
+            let venuesEndpoint = "venues/\(id)"
+            let venuesUrl = self.constructURL(endpoint: venuesEndpoint)
+            URLSession.shared.dataTask(with: venuesUrl) { (data, urlResponse, error) in
+                guard let data = data, error == nil, urlResponse != nil else {
+                    print("getting ids didn't work")
+                    return
+                }
+                do {
+                    let venue = try JSONDecoder().decode(VenueAPIResponse.self, from: data)
+                    guard let eachVenue = venue.response.venue else { return }
+                    self.coffeeShopDetails.append(eachVenue)
+                    
+                    DispatchQueue.main.async {
+                        self.venuesTableView.reloadData()
+                    }
+                } catch let error {
+                    print(error)
+                }
+                dispatchGroup.leave()
+                }.resume()
+        }
+        dispatchGroup.notify(queue: .main) {
+            print("Finished All Requests")
+        }
+    }
     
 }
 
-extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -119,9 +118,18 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "VenueCell") as? VenueCell  else { return UITableViewCell() }
-
         cell.configureTheCell(coffeeShopDetails[indexPath.row])
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "details" {
+            let viewController = segue.destination as! DetailsViewController
+            let selectedCell = venuesTableView.indexPathForSelectedRow!
+            viewController.venue = coffeeShopDetails[selectedCell.item]
+            
+            venuesTableView.deselectRow(at: selectedCell, animated: false)
+        }
     }
     
 }
