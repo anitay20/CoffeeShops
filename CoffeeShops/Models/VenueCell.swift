@@ -13,8 +13,6 @@ class VenueCell: UITableViewCell {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-//    @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
@@ -39,9 +37,6 @@ class VenueCell: UITableViewCell {
         
         self.nameLabel.text = venue.name
         self.addressLabel.text = venue.location.formattedAddress[0]
-        
-        let descriptions = venue.listed?.groups[0].items.map { $0.description }
-        self.descriptionLabel.text = getDescription(descriptions!)
 
         self.ratingLabel.text = venue.rating?.description
         self.priceLabel.text = venue.price?.currency
