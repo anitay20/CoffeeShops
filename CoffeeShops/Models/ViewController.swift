@@ -28,9 +28,8 @@ class ViewController: UIViewController {
     }
     
     func constructURL(endpoint: String) -> URL {
-        // anitay20@gmail.com
-        let clientID = "P402HAXJU35OKOS2ZZLDC3QZ0JQPOZM3IWWQVF2ZR5FMW5MW"
-        let clientSecret = "0RD2XLKTPVI11ZTXFH1RKWXOPJQC51IJ0IVCH1YJL4RUDXKF"
+        let clientID = ""
+        let clientSecret = ""
         
         let baseUrl = "https://api.foursquare.com/v2"
         let version = "20180323"
